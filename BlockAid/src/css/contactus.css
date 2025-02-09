@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+  h2, h3 {
+    color: #004EBA;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    color: #004EBA;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 800px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }

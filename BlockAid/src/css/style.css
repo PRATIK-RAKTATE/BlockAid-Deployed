@@ -1,0 +1,95 @@
+
+/* main starts here */
+main {
+    display: flex;
+}
+
+.left {
+    width: 45%;
+    margin-left: 12vw;
+    margin-top: 10vh;
+}
+
+.big-text {
+    font-size: 30px;
+    color: #0B3558;
+}
+
+.big-text * {
+    padding-bottom: 20px;
+}
+
+#h11 , #h12 {
+    margin-left: 196px;
+    font-weight: bolder;
+    background-image: url(/assest/images/backgruound.webp);
+    background-position: 20% 20%;
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    z-index: 30;
+    background-size: cover;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 59px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    white-space: nowrap;
+}
+
+.big-text p {
+    width: 500px;
+    font-size: 25px;
+}
+
+.sign-up {
+    margin-top: 50px;
+}
+
+.sign-up svg {
+    width: 35px;
+    border-radius: 5px;
+
+    margin-left: -16px;
+}
+
+.sign-up button{
+    width: 300px;
+    background-color: #004EBA;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sign-up button * {
+    padding: 5px 10px;
+}
+
+.sign-up p {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#register-btn {
+    background-color: #0B3558;
+}
+
+.right {
+    width: 55%;
+
+    display: flex;
+    align-items: center;
+}
+
+.right-container {
+    width: 700px;
+    height: 400px;
+    background-color: rgba(0, 204, 255, 0.941);
+}

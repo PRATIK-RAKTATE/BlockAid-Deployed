@@ -1,0 +1,36 @@
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  main section {
+    margin-bottom: 30px;
+  }
+  main section h2 {
+    color: #004EBA;
+    border-bottom: 2px solid #5b85be;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  
+
+  /* FAQ Section */
+  .faq .faq-item {
+    margin-bottom: 20px;
+  }
+  .faq .faq-item h3 {
+    margin: 0;
+    color: #5b85be;
+    font-size: 1.2rem;
+  }
+  .faq .faq-item p {
+    margin: 5px 0 0;
+    line-height: 1.5;
+  }
+
+ 

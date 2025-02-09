@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockAid</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/header.css">
+    <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Container for the right section */
+    .right {
+      width: 44%;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .right-container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .right-container h1 {
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      color: #004EBA;
+    }
+
+    /* Slider Styles */
+    .slider {
+      position: relative;
+      width: 100%;
+      height: 400px; /* Adjust height as needed */
+      overflow: hidden;
+      border: 2px solid #004EBA;
+      border-radius: 10px;
+      margin: 0 auto;
+      background: #fff;
+    }
+
+    /* Slides Container: Display flex for horizontal layout */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 400%; /* 4 slides x 100% each */
+    }
+
+    /* Each Slide */
+    .slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Navigation Buttons */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 18px;
+      z-index: 2;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+   svg {
+   width: 50px !important;
+   height: 50px !important;
+   }
+   
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assest/images/logo.png" height="60px" alt="">
+        </div>
+        <nav id="header-links">
+            <a href="/index.html">Home</a>
+            <a href="/src/html/about.html">About</a>
+            <a href="/src/html/loginRegister.html">Transactions</a>
+            <a href="/src/html/help.html">Help</a>
+            <a href="/src/html/contactus.html">Contact Us</a>
+        </nav>
+        <div class="header-btns">
+            <a href="/src/html/loginRegister.html">
+                <button id="login-btn">Log In</button>
+            </a>
+
+            <a href="/src/html/loginRegister.html">
+                <button id="get-started-btn">Get Started</button>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="left">
+            <div class="big-text">
+                <h1 id="h11">Donate Crypto. </h1>
+                <h1 id="h12"> Trace Impact .</h1>
+                <p>Empowering transparency and accountability in the non-profit sector.</p>
+            </div>
+            <div class="sign-up">
+                <a href="/src/html/loginRegister.html">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none" viewBox="0 0 40 41">
+                            <rect width="40" height="40" y="0.5" fill="#fff" rx="4"></rect>
+                            <g clip-path="url(#googleLogo_svg__a)">
+                                <path fill="#4285F4"
+                                    d="M31.766 20.776c0-.815-.066-1.635-.207-2.438H20.24v4.621h6.482a5.554 5.554 0 0 1-2.399 3.647v2.998h3.867c2.271-2.09 3.576-5.177 3.576-8.828Z">
+                                </path>
+                                <path fill="#34A853"
+                                    d="M20.24 32.5c3.237 0 5.966-1.062 7.955-2.896l-3.867-2.998c-1.076.731-2.465 1.146-4.084 1.146-3.13 0-5.784-2.112-6.737-4.952h-3.99v3.091a12.002 12.002 0 0 0 10.723 6.61Z">
+                                </path>
+                                <path fill="#FBBC04"
+                                    d="M13.503 22.8a7.187 7.187 0 0 1 0-4.594v-3.091H9.517a12.01 12.01 0 0 0 0 10.776l3.986-3.09Z">
+                                </path>
+                                <path fill="#EA4335"
+                                    d="M20.24 13.25a6.52 6.52 0 0 1 4.603 1.799l3.427-3.426A11.533 11.533 0 0 0 20.24 8.5a11.998 11.998 0 0 0-10.723 6.614l3.986 3.09c.948-2.843 3.607-4.955 6.737-4.955Z">
+                                </path>
+                            </g>
+                            <defs>
+                                <clipPath id="googleLogo_svg__a">
+                                    <path fill="#fff" d="M8 8.5h24v24H8z"></path>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <p>Sign up with Google</p>
+                    </button>
+                </a>
+                <a href="/src/html/loginRegister.html">
+                    <button id="register-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none" viewBox="0 0 40 41">
+                            <rect width="40" height="40" y="0.5" fill="#fff" rx="4"></rect>
+                            <path fill="#FEBA08" d="M21.023 21.523H31.25V31.75H21.023z"></path>
+                            <path fill="#05A6F0" d="M8.75 21.523h10.227V31.75H8.75z"></path>
+                            <path fill="#80BC06" d="M21.023 9.25H31.25v10.227H21.023z"></path>
+                            <path fill="#F25325" d="M8.75 9.25h10.227v10.227H8.75z"></path>
+                        </svg>
+                        <p>Register for Free &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-container">
+              <h1>SLIDER</h1>
+              <div class="slider">
+                <div class="slides">
+                  <div class="slide">
+                    <img src="/assest/images/blockchain background about us-min.jpg" alt="Image 1">
+                  </div>
+                  <div class="slide">
+                    <img src="image2.jpg" alt="Image 2">
+                  </div>
+                  <div class="slide">
+                    <img src="image3.jpg" alt="Image 3">
+                  </div>
+                  <div class="slide">
+                    <img src="image4.jpg" alt="Image 4">
+                  </div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+              </div>
+            </div>
+          </div>
+        
+          
+    </main>
+    <script>
+        // JavaScript for slider functionality
+        let slideIndex = 0;
+        const slidesContainer = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+    
+        // Function to show the slide at a given index
+        function showSlide(index) {
+          // Wrap index if out of bounds
+          if (index >= totalSlides) {
+            slideIndex = 0;
+          } else if (index < 0) {
+            slideIndex = totalSlides - 1;
+          } else {
+            slideIndex = index;
+          }
+          slidesContainer.style.transform = 'translateX(' + (-slideIndex * 100) + '%)';
+        }
+    
+        // Event Listeners for buttons
+        nextButton.addEventListener('click', () => {
+          showSlide(slideIndex + 1);
+        });
+    
+        prevButton.addEventListener('click', () => {
+          showSlide(slideIndex - 1);
+        });
+    </script>
+</body>
+
+</html>

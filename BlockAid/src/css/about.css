@@ -1,0 +1,39 @@
+main {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 187px;
+
+    display: flex;
+}
+
+.text {
+    width: 500px;
+}
+
+.text h1 {
+
+    color: #004EBA;
+}
+
+#blockchain {
+    padding-top: 40px;
+    color: black;
+}
+
+.right {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.right img {
+    width: 400px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
